@@ -13,11 +13,6 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-if [ "0" == $(id -u) ]; then
-	echo "ERROR: Do not run these scripts as 'root'."
-	exit 1
-fi
-
 set -e
 
 cd scripts
