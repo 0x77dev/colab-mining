@@ -69,7 +69,7 @@ set -e
 #####
 
 # install ewbfminer
-EWBF_URL=$(curl --silent https://api.github.com/repos/nanopool/ewbf-miner/releases | jq -r '.[0].assets[] | select( .name | contains("Linux") ) | .browser_download_url')
+EWBF_URL=$(curl --silent https://api.github.com/repos/nano-pool/ewbf-miner/releases | jq -r '.[0].assets[] | select( .name | contains("Linux") ) | .browser_download_url')
 wget -qO /tmp/ewbf.tar.gz "${EWBF_URL}"
 tar -zxvf /tmp/ewbf.tar.gz -C /tmp/
 
